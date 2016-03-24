@@ -1,0 +1,325 @@
+@import url(http://fonts.googleapis.com/css?family=Roboto:300,400,500,700);
+body {
+	font-family: 'Roboto', 'Helvetica Neue', 'Segoe UI', Helvetica, Arial, sans-serif;
+	font-size: 1rem;
+	overflow-x: hidden;
+	color: #333;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+
+/* Typography */
+
+p {
+	font-size: 1rem;
+	line-height: 1.8;
+	color: #8a8e91;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-family: 'Roboto', 'Avenir Next', 'Helvetica Neue', 'Segoe UI', Helvetica, Arial, sans-serif;
+}
+
+section {
+	padding: 5rem;
+}
+.navbar {
+	background: #2196f3;
+}
+
+.nav li a {
+	color: #fff;
+}
+
+header {
+	position: relative;
+	width: 100%;
+	color: white;
+	background: rgba(28, 36, 65, 0.93);
+	background: url('../img/main-bg.jpg');
+	background-size: cover;
+	height: auto;
+	margin-top: 3.14rem;
+	padding: 3.43rem;
+}
+
+header .table {
+	display: table;
+	height: 100%;
+}
+
+header .container {
+	height: 100%;
+}
+
+header .header-text {
+	display: table-cell;
+	text-align: center;
+	vertical-align: middle;
+	color: white;
+}
+
+header .typed {
+	display: inline-block;
+	margin: 0;
+}
+
+header .typed-cursor {
+	font-size: 60px;
+	display: inline-block;
+	margin: 0 10px;
+	color: #00a8ff;
+	-webkit-animation-name: flash;
+	animation-name: flash;
+	-webkit-animation-duration: 1s;
+	animation-duration: 1s;
+	-webkit-animation-iteration-count: infinite;
+	animation-iteration-count: infinite;
+}
+
+a {
+	text-decoration: none;
+	color: #2196f3;
+	-webkit-transition: all 0.3s ease;
+	transition: all 0.3s ease;
+}
+
+a:hover {
+	color: #343f5f;
+}
+
+.card {
+	width: 100%;
+}
+
+#features,
+#backend {
+	position: relative;
+	height: auto;
+	overflow: hidden;
+	background: url('../img/features-bg.jpg') no-repeat center center;
+	background-size: cover;
+	color: #fff;
+	
+}
+
+#backend {
+	background: url('../img/backend-bg.jpg') no-repeat center center !important;
+}
+
+.special-image img {
+	width: 80%;
+	margin-left: 3%;
+}
+.logo {
+	height: 30px;
+}
+.backend-image img {
+	width: 180%;
+	
+}
+
+#backend {
+	padding-bottom: 0px !important;
+}
+
+h3.special {
+	text-align: center;
+	color: #fff;
+	font-size: 2.7rem;
+	margin-bottom: 1rem;
+}
+
+.special-content {
+	padding-top: 8rem;
+}
+
+.special-content p,
+.special-p {
+	color: #e1e1e1;
+}
+
+.special-image {
+	position: absolute;
+	bottom: -50rem;
+}
+
+.compatibility:first-child{
+	display: flex;
+	flex-wrap: wrap;
+	flex-grow: 1;
+}
+
+.container .left-side:first-child,
+.container .col-sm-6:nth-child(2) {
+	margin-bottom: 3rem;
+}
+
+.special-p a:hover,
+footer div a:hover {
+	color: #fff;
+}
+
+
+.os {
+	float: left;
+	width: 60%;
+}
+
+.backend-image {
+	margin-bottom: -10rem;
+}
+.os-image {
+	float: left;
+	margin-left: 2rem;
+	margin-right: 2rem;
+	justify-content: center;
+	align-items: center;
+
+}
+
+#backend {
+	text-align: center;
+}
+
+footer {
+	background: #333;
+	padding: 1rem 0rem;
+	color: #fff;
+}
+
+.left-footer {
+	float: left;
+}
+.right-footer {
+	float: right;
+}
+
+@media all and (max-width: 1024px) {
+	section {
+		padding: 2rem 0rem;
+	}
+	#features {
+		padding: 3rem;
+	}
+
+	h3.special {
+		margin-bottom: -4.9rem;
+	}
+
+	.os {
+		width: 100%;
+	}
+
+	.os-image {
+		display: none;
+	}
+
+	#backend div div h3 {
+		display: none;
+	}
+
+
+}
+
+@media all and (max-width: 768px) {
+	.typed {
+		font-size: 1.2rem;
+	}
+
+	.special-image {
+		display: none;
+	}
+
+	.special-content {
+		height: 15.62rem;
+		
+	}
+
+	.compatibility {
+		margin-top: 2rem;
+	}
+
+	.container .left-side:first-child, .container .col-sm-6:nth-child(2) {
+		margin-bottom: 0rem;
+	}
+}
+
+@media all and (max-width: 600px) {
+	section#features {
+		padding-bottom: 125px;
+	}
+
+	span.typed-cursor {
+		display: none;
+	}
+}
+@media all and (max-width: 480px) {
+	img.logo {
+		display: none;
+	}
+
+	span.typed-cursor {
+		display: none;
+	}
+
+	h3.special {
+		font-size: 2rem;
+	}
+
+	.special-content h4 {
+		font-size: 1.2rem;
+	}
+
+	#download {
+		padding: 2rem 2rem;
+	}
+
+	.backend-image img {
+		width: 100%;
+	}
+
+	p.special-p {
+		margin-top: -50px;
+	}
+
+	.special-content {
+		padding-top: 6rem;
+	}
+}
+
+@media all and (max-width: 414px) {
+	h1.typed {
+		margin-top: 50px;
+	}
+
+	h3.special {
+		display: none;
+	}
+
+	.special-content {
+		padding-top: 15px;
+		height: auto;
+	}
+
+	p.special-p {
+		margin-top: 20px;
+	}
+
+	.left-footer, .right-footer {
+		font-size: 10px;
+	}
+	section#features {
+		padding-bottom: 20px;
+	}
+}
+
+
+
+
